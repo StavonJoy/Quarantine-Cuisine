@@ -14,3 +14,20 @@ main {
   background-color: #6089A9;
   border: 1px solid #6089A9;
 }
+
+
+h1 {
+  font-family: 'Roboto Slab', serif;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+footer {
+  background-color: #e7d9c850;
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+  margin: 0 auto;
+}

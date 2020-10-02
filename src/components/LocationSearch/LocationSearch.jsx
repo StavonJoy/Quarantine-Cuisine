@@ -42,7 +42,12 @@ class LocationSearch extends Component {
                         <img src={rest.photo} alt=""/>
                         <h5 className="card-title">{rest.phone}</h5>
                         <a className="card-text" src={rest.website} target="_blank">{rest.website}</a>
-                        <p className="card-text">{rest.description}</p>
+                        {/* <p className="card-text">{rest.description}</p> */}
+                        { rest.safetyReviews ?
+                        <p>{rest.staffWearsGloves}</p>
+                        :
+                        <p>No safety reviews yet</p>
+                        }
                         <Link to={{ pathname: '/addReview', state: {restaurant: rest} }} >
                         <button className="btn btn-primary" id="btn">ADD Review</button>
                         </Link>
@@ -52,7 +57,7 @@ class LocationSearch extends Component {
             ))}
             </>
             :
-            <h3>Enter a search to view restaurants!</h3>
+            <></>
         }
         </>}
         </>
