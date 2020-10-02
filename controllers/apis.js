@@ -12,9 +12,8 @@ async function getTARestaurantsFromLocation(req, res) {
 async function getTALocationIdFromQuery(locationQuery) {
     const options = {
         method: 'GET',
-        url: 'https://tripadvisor1.p.rapidapi.com/locations/search',
+        url: 'https://tripadvisor1.p.rapidapi.com/locations/auto-complete',
         qs: {
-          location_id: '1',
           limit: '10',
           sort: 'relevance',
           offset: '0',

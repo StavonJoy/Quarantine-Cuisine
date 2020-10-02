@@ -1,0 +1,12 @@
+header {
+  background-color: rgba(65, 105, 225, 0.616);
+  height: 100px;
+  position: relative;
+  text-align: center;
+}
+h1{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -165px;
+}

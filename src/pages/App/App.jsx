@@ -7,6 +7,7 @@ import authService from "../../services/authService";
 import Users from "../Users/Users";
 import "./App.css";
 import LocationSearch from '../../components/LocationSearch/LocationSearch'
+import LandingPage from '../LandingPage/LandingPage'
 
 class App extends Component {
   state = {
@@ -26,14 +27,14 @@ class App extends Component {
     const {user} = this.state
     return (
       <>
-        <NavBar user={user} handleLogout={this.handleLogout} />
         <Route
           exact
           path="/"
           render={() => (
             <main>
-              <h1>Welcome. This is an authorization template.</h1>
               <LocationSearch user={user}/>
+              <LandingPage />
+              {/* <AddReview /> */}
             </main>
           )}
         />
