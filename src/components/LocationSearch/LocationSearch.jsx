@@ -49,7 +49,7 @@ class LocationSearch extends Component {
             ))}
             </>
             :
-            <h3>Enter a search to view restaurants!</h3>
+            <></>
         }
         </>}
         </>

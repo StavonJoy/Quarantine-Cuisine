@@ -1,13 +1,15 @@
 import React from 'react';
-import LocationSearch from '../../components/LocationSearch/LocationSearch'
 import './LandingPage.css'
 
 function LandingPage() {
   return (
   <>
-    <header>
     <h1>Quarantine Cuisine</h1>
+    <header>
     </header>
+    <footer>
+      <p>SAFETY NOTICE: Learn more about dining during COVID-19</p>
+    </footer>
   </>
   )
 }

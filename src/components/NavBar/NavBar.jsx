@@ -7,15 +7,16 @@ const NavBar = ({ user, handleLogout }) => {
       {user ?
         <nav>
           <div className="nav-wrapper">
-              <a href=" " id="btn" className="btn btn-info">Welcome, {user.name}</a>
-              <a href=" " id="btn" className="btn btn-info" onClick={handleLogout}>Log Out</a>
+              <a href=" " >Welcome, {user.name}</a>
+              <a href=" " onClick={handleLogout}>Log Out</a>
           </div>
         </nav>
       :
         <nav>
           <div className="nav-wrapper">
-              <a href="/login" id="btn" className="btn btn-info">Log In</a>
-              <a href="/signup" id="btn" className="btn btn-info">Sign Up</a>
+              <p>Have an account?</p>
+              <a href="/login" >Log In</a>
+              <a href="/signup" >Sign Up</a>
           </div>
         </nav>
       }
