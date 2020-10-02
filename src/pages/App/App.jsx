@@ -6,6 +6,7 @@ import Login from "../Login/Login";
 import authService from "../../services/authService";
 import Users from "../Users/Users";
 import "./App.css";
+import AddReview from "../AddReview/AddReview";
 import LocationSearch from '../../components/LocationSearch/LocationSearch'
 
 class App extends Component {
@@ -33,6 +34,7 @@ class App extends Component {
           render={() => (
             <main>
               <h1>Welcome. This is an authorization template.</h1>
+              <AddReview />
               <LocationSearch />
             </main>
           )}
