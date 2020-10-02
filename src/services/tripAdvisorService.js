@@ -1,3 +1,4 @@
+
 export function getRestaurantsFromLocationSearch(locationQuery){
     return fetch(`/apis/tripAdvisor/locationSearch/${locationQuery}`, {
         method: 'POST'
