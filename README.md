@@ -29,38 +29,24 @@ For everyone who needs to dine in safety allow users to review, and browse revie
 
 ---
 
-## ERD and Wireframes
-
-#### ERD
-
-![](public/images/ERD.png)
-
----
-
-#### WireFrame
+## Wireframes
 
 ![Image](public/images/WF1.png)
 
----
-
-![Image](public/images/WF2.png)
-
 
 ## Screenshots
-![Home Screen](public/images/HomeScreenshot.png)
+
+![Home](public/images/Sshot1.png)
 
 ---
-![All Makers](public/images/Sshot1.png)
-
----
-![Maker Store Items](public/images/Sshot2.png)
+![Search](public/images/Sshot2.png)
 
 ---
 
 ## Stretch Goals/ What Comes Next
 
-- [ ] Implement other places/locations to review
-- [ ] Give Restraunts the ability to answer reviews and update their own page
+- [ ] Implement other types of places to review
+- [ ] Give buisness owners the ability to answer reviews and update their own page
 
 
 ---
