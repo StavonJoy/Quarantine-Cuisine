@@ -6,7 +6,6 @@ import Login from "../Login/Login";
 import authService from "../../services/authService";
 import Users from "../Users/Users";
 import "./App.css";
-import AddReview from "../AddReview/AddReview";
 import LocationSearch from '../../components/LocationSearch/LocationSearch'
 import LandingPage from '../LandingPage/LandingPage'
 
@@ -33,6 +32,7 @@ class App extends Component {
           path="/"
           render={() => (
             <main>
+              <LocationSearch user={user}/>
               <LandingPage />
               {/* <AddReview /> */}
             </main>

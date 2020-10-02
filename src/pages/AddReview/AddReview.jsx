@@ -3,6 +3,9 @@ import * as restaurantService from '../../services/restaurantService'
 
 export default class AddReview extends Component {
     state = {
+        restaurantInfo: {
+        ...this.props.restaurant
+        },
         outdoorSeating: false,
         indoorSeating: false,
         curbsidePickup: false,
@@ -18,7 +21,7 @@ export default class AddReview extends Component {
         handSanitizerProvided: false,
         customersGetTemperatureChecks: false,
         safetyRating: null,
-        // author: this.props.user._id 
+        author: this.props.user._id
     }
     handleCheckboxChange = (e) => {
         this.setState({ [e.target.name]: e.target.checked })
@@ -28,7 +31,7 @@ export default class AddReview extends Component {
     }
 
     submitReview = async () => {
-        await restaurantService.addNewReview(this.props.restaurant._id, this.state)
+        await restaurantService.addNewReview(this.state)
         // this.props.history.push('/')
     }
 

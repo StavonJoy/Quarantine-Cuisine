@@ -27,11 +27,11 @@ const restaurantSchema = new Schema({
     photo: String,
     phone: String,
     website: String,
-    address_obj: Object,
+    address: String,
     cuisine: [Object],
-    price_level: String,
-    safetyReviews: [safetyReviewSchema]
-})
+    price: String,
+    safetyReviews: {type: [safetyReviewSchema], default: []}
+}, {timestamps: true})
 
 restaurantSchema.methods.getAverageSafetyRating = function() {
     const total = this.safetyReviews.reduce((sum, review) => {
@@ -41,3 +41,5 @@ restaurantSchema.methods.getAverageSafetyRating = function() {
     averageRating = total / this.safetyReviews.filter(review => review.safetyRating != null).length
     return averageRating
 }
+
+module.exports = mongoose.model('Restaurant', restaurantSchema)

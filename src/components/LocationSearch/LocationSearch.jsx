@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import AddReview from '../../pages/AddReview/AddReview';
 import * as tripAdvisorService from '../../services/tripAdvisorService'
 import './LocationSearch.css'
 import NavBar from '../../components/NavBar/NavBar'
@@ -32,12 +33,14 @@ class LocationSearch extends Component {
             <>
             {this.state.restaurants && this.state.restaurants.length ?
             <>
+            <AddReview restaurant={this.state.restaurants[0]} user={this.props.user}/>
             {this.state.restaurants.map(rest => (
                 <>
                 <br></br>
                 <div className="card">
                     <h5 className="card-header">{rest.name}</h5>
                     <div className="card-body">
+                        <img src={rest.photo} alt=""/>
                         <h5 className="card-title">{rest.phone}</h5>
                         <a className="card-text" src={rest.website} target="_blank">{rest.website}</a>
                         <p className="card-text">{rest.description}</p>
