@@ -22,8 +22,7 @@ class LocationSearch extends Component {
     render() {
         return(
             <>
-            <label>Enter a city/town or state:</label><br></br>
-            <input type="text" placeholder="enter location" value={this.state.locationQuery} name="locationQuery" onChange={this.handleChange}/>
+            <input type="text" placeholder="Enter a city..." value={this.state.locationQuery} name="locationQuery" onChange={this.handleChange}/><br></br>
             <button onClick={this.getRestaurants} id="btn" className="btn btn-info">Search</button>
             <NavBar />
             {this.state.loading === true ? 
