@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import * as restaurantService from '../../services/restaurantService'
+import './AddReview.css'
 
 export default class AddReview extends Component {
     state = {
@@ -39,51 +40,55 @@ export default class AddReview extends Component {
         return(
             <>
             <h3>{this.props.restaurant.name}</h3>
-            <label>outdoor seating</label>
+            <p>{this.props.restaurant.address}</p>
+            <div className="review">
+            {/* <label>Outdoor seating</label>
             <input type="checkbox" onChange={this.handleCheckboxChange} selected={this.state.outdoorSeating} name="outdoorSeating"/>
-            <br />
-            <label>indoorSeating</label>
+            <br /> */}
+            {/* <label>indoorSeating</label>
             <input type="checkbox" onChange={this.handleCheckboxChange} selected={this.state.indoorSeating} name="indoorSeating"/>
-            <br />
-            <label htmlFor="">curbsidePickup</label>
+            <br /> */}
+            {/* <label htmlFor="">Curbside Pickup</label>
             <input type="checkbox" onChange={this.handleCheckboxChange} selected={this.state.curbsidePickup} name="curbsidePickup"/>
-            <br />
-            <label htmlFor="">takeout</label>
+            <br /> */}
+            {/* <label htmlFor="">takeout</label>
             <input type="checkbox" onChange={this.handleCheckboxChange} selected={this.state.takeout} name="takeout"/>
-            <br />
-            <label htmlFor="">contactlessPayment</label>
+            <br /> */}
+            <label htmlFor="">Contactless Payment</label>
             <input type="checkbox" onChange={this.handleCheckboxChange} selected={this.state.contactlessPayment} name="contactlessPayment"/>
             <br />
-            <label htmlFor="">limitedCapacity</label>
+            <label htmlFor="">Limited Capacity</label>
             <input type="checkbox" onChange={this.handleCheckboxChange} selected={this.state.limitedCapacity} name="limitedCapacity"/>
             <br />
-            <label htmlFor="">socialDistancingEnforced</label>
+            <label htmlFor="">Social Distancing Enforced</label>
             <input type="checkbox" onChange={this.handleCheckboxChange} selected={this.state.socialDistancingEnforced} name="socialDistancingEnforced"/>
             <br />
-            <label htmlFor="">staffUseHandSanitizer</label>
+            {/* <label htmlFor="">staffUseHandSanitizer</label>
             <input type="checkbox" onChange={this.handleCheckboxChange} selected={this.state.staffUseHandSanitizer} name="staffUseHandSanitizer"/>
-            <br />
-            <label htmlFor="">staffSanitizeHandsBetCustomers</label>
+            <br /> */}
+            <label htmlFor="">Sanitize Between Customers</label>
             <input type="checkbox" onChange={this.handleCheckboxChange} selected={this.state.staffSanitizeHandsBetCustomers} name="staffSanitizeHandsBetCustomers"/>
             <br />
-            <label htmlFor="">staffWearsMasks</label>
+            <label htmlFor="">Staff Wears Masks</label>
             <input type="checkbox" onChange={this.handleCheckboxChange} selected={this.state.staffWearsMasks} name="staffWearsMasks"/>
             <br />
-            <label htmlFor="">staffWearsGloves</label>
+            <label htmlFor="">Staff Wears Gloves</label>
             <input type="checkbox" onChange={this.handleCheckboxChange} selected={this.state.staffWearsGloves} name="staffWearsGloves"/>
             <br />
-            <label htmlFor="">staffGetsTemperatureChecks</label>
+            {/* <label htmlFor="">staffGetsTemperatureChecks</label>
             <input type="checkbox" onChange={this.handleCheckboxChange} selected={this.state.staffGetsTemperatureChecks} name="staffGetsTemperatureChecks"/>
-            <br />
-            <label htmlFor="">handSanitizerProvided</label>
+            <br /> */}
+            <label htmlFor="">Hand Sanitizer Provided</label>
             <input type="checkbox" onChange={this.handleCheckboxChange} selected={this.state.handSanitizerProvided} name="handSanitizerProvided"/>
             <br />
-            <label htmlFor="">customersGetTemperatureChecks</label>
+            {/* <label htmlFor="">customersGetTemperatureChecks</label>
             <input type="checkbox" onChange={this.handleCheckboxChange} selected={this.state.customersGetTemperatureChecks} name="customersGetTemperatureChecks"/>
-            <br />
-            <label htmlFor="">safetyRating</label>
+            <br /> */}
+            <label id="rating" htmlFor="">Overall Safety Rating</label>
             <input type="number" min='0' max='5' onChange={this.handleRatingChange} value={this.state.safetyRating} name="safetyRating"/>
-            <button onClick={this.submitReview}>SUBMIT</button>
+            <button onClick={this.submitReview} id="btn">SUBMIT</button>
+            <a href="/" id="btn">Cancel</a>
+            </div>
             </>
             )
     }

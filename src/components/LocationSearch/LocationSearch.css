@@ -6,9 +6,8 @@ a:hover {
 }
 
 .card {
-  width: 75%;
+  width: 85%;
   margin: 0 auto;
-  background-color: white;
 }
 
 label {
@@ -24,4 +23,19 @@ input {
 input:hover {
   border: 1px solid blue;
   border-radius: 25px;
+}
+img {
+  margin-bottom: 5px;
+}
+
+.covid {
+  background-color: #a8ccE125;
+}
+#covid-head {
+  font-weight: 700;
+}
+
+.card-header {
+  font-weight: 700;
+  background-color: #a8ccE125;
 }

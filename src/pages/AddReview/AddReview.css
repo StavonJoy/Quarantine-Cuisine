@@ -1,0 +1,10 @@
+input {
+  margin: auto;
+}
+label {
+  margin: auto;
+}
+
+#rating {
+  margin-right: 15px;
+}
