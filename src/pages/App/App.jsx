@@ -32,8 +32,8 @@ class App extends Component {
           path="/"
           render={() => (
             <main>
+              <LandingPage user={user}/>
               <LocationSearch user={user}/>
-              <LandingPage />
               {/* <AddReview /> */}
             </main>
           )}

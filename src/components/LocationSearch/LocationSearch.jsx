@@ -32,7 +32,7 @@ class LocationSearch extends Component {
             <>
             {this.state.restaurants && this.state.restaurants.length ?
             <>
-            <AddReview restaurant={this.state.restaurants[0]} user={this.props.user}/>
+            {/* <AddReview restaurant={this.state.restaurants[0]} user={this.props.user}/> */}
             {this.state.restaurants.map(rest => (
                 <>
                 <br></br>
