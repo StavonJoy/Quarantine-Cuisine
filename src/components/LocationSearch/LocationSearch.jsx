@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import AddReview from '../../pages/AddReview/AddReview';
 import * as tripAdvisorService from '../../services/tripAdvisorService'
 
 class LocationSearch extends Component {
@@ -23,11 +24,12 @@ class LocationSearch extends Component {
             <button onClick={this.getRestaurants}>Search Restaraunts</button>
             {this.state.restaurants && this.state.restaurants.length ?
             <>
+            <AddReview restaurant={this.state.restaurants[0]} user={this.props.user}/>
             {this.state.restaurants.map(rest => (
                 <>
                 <h3>{rest.name}</h3>
                 <h3>id: {rest.location_id}</h3>
-                {/* <h3>{rest['photo'].images['small'].url}</h3> */}
+                <img src={rest.photo} alt=""/>
                 <p>{rest.description}</p>
                 <h3>{rest.phone}</h3>
                 <h3>{rest.website}</h3>
