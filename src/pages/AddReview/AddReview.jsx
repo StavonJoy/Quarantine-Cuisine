@@ -38,6 +38,7 @@ export default class AddReview extends Component {
     render() {
         return(
             <>
+            <h3>{this.props.restaurant.name}</h3>
             <label>outdoor seating</label>
             <input type="checkbox" onChange={this.handleCheckboxChange} selected={this.state.outdoorSeating} name="outdoorSeating"/>
             <br />

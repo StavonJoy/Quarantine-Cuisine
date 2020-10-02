@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 import AddReview from '../../pages/AddReview/AddReview';
 import * as tripAdvisorService from '../../services/tripAdvisorService'
 import './LocationSearch.css'
@@ -33,7 +34,6 @@ class LocationSearch extends Component {
             <>
             {this.state.restaurants && this.state.restaurants.length ?
             <>
-            <AddReview restaurant={this.state.restaurants[0]} user={this.props.user}/>
             {this.state.restaurants.map(rest => (
                 <>
                 <br></br>
@@ -44,6 +44,9 @@ class LocationSearch extends Component {
                         <h5 className="card-title">{rest.phone}</h5>
                         <a className="card-text" src={rest.website} target="_blank">{rest.website}</a>
                         <p className="card-text">{rest.description}</p>
+                        <Link to={{ pathname: '/addReview', state: {restaurant: rest} }} >
+                        <button className="btn btn-primary" onClick={this.goToAddReview}>ADD Review</button>
+                        </Link>
                     </div>
                 </div>
                 </>
