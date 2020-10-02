@@ -3,6 +3,7 @@ import * as restaurantService from '../../services/restaurantService'
 
 export default class AddReview extends Component {
     state = {
+        ...this.props.restauran,
         outdoorSeating: false,
         indoorSeating: false,
         curbsidePickup: false,
