@@ -47,7 +47,14 @@ class LocationSearch extends Component {
                         <div className="covid">
                         <p id="covid-head">COVID-19 Health & Safety Measures</p>
                         { rest.safetyReviews ?
-                        <p>{rest.staffWearsGloves}</p>
+                        <>
+                        <h6>Masks Req: {rest.avMasksReq ? <>Yes</> : <>No</>}</h6>
+                        <h6>Staff Masks: {rest.avStaffMasks ? <>Yes</> : <>No</>}</h6>
+                        <h6>Social Distancing: {rest.avSocDist ? <>Yes</> : <>No</>}</h6>
+                        <h6>Limited Capacity: {rest.avLimCap ? <>Yes</> : <>No</>}</h6>
+                        <h6>Sanitized Between Customers: {rest.avSanBet ? <>Yes</> : <>No</>}</h6>
+                        <h6>Cashless: {rest.avCLessPay ? <>Yes</> : <>No</>}</h6>
+                        </>
                         :
                         <p>No safety reviews yet</p>
                         }

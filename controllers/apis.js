@@ -11,7 +11,11 @@ async function getTARestaurantsFromLocation(req, res) {
     const savedRests = await Restaurant.find()
     restaurants = restaurants.map(r => {
         for (let sRest of savedRests) {
-            if (r.location_id === sRest.location_id) r = sRest
+            if (r.location_id === sRest.location_id) {
+                sRest.setAverages()
+                sRest.save()
+                r = sRest
+            }
         }
         return r
     })
