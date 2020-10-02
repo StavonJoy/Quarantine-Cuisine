@@ -36,3 +36,8 @@ footer {
 .review {
   background-color: #e7D9C850;
 }
+
+a {
+  color: #6089A9;
+  text-decoration: underline;
+}

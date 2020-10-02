@@ -60,7 +60,7 @@ class LocationSearch extends Component {
                         }
                         </div>
                         <Link to={{ pathname: '/addReview', state: {restaurant: rest} }} >
-                        <button className="btn btn-primary" id="btn">ADD Review</button>
+                        <button className="btn btn-primary" id="btn">Add Review</button>
                         </Link>
                     </div>
                 </div>

@@ -32,6 +32,10 @@ class LoginPage extends Component {
   render() {
     const {email, pw} = this.state
     return (
+      <>
+      <h1>Quarantine Cuisine</h1>
+      <header>
+      </header>
       <main className="Login">
         <h3>Log In</h3>
         <form autoComplete="off" onSubmit={this.handleSubmit}>
@@ -41,24 +45,27 @@ class LoginPage extends Component {
             id="email"
             value={email}
             name="email"
+            placeholder="Email"
             onChange={this.handleChange}
           />
-          <label htmlFor="email">Email</label>
+          {/* <label htmlFor="email">Email</label> */}
           <input
             type="password"
             autoComplete="off"
             id="password"
             value={pw}
             name="pw"
+            placeholder="Password"
             onChange={this.handleChange}
           />
-          <label htmlFor="password">Password</label>
-          <button className="btn green">Log In</button>&nbsp;&nbsp;&nbsp;
-          <Link className="btn red" to="/">
+          {/* <label htmlFor="password">Password</label> */}
+          <button className="btn green" id="btn">Log In</button>&nbsp;&nbsp;&nbsp;
+          <Link className="btn red" to="/" id="btn">
             Cancel
           </Link>
         </form>
       </main>
+      </>
     );
   }
 }

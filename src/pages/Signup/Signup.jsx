@@ -13,10 +13,15 @@ class Signup extends Component {
 
   render() {
     return (
+      <>
+      <h1>Quarantine Cuisine</h1>
+      <header>
+      </header>
       <main>
         <SignupForm {...this.props} updateMessage={this.updateMessage} />
         <p>{this.state.message}</p>
       </main>
+      </>
     );
   }
 }

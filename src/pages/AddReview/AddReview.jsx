@@ -85,10 +85,10 @@ export default class AddReview extends Component {
             {/* <label htmlFor="">customersGetTemperatureChecks</label>
             <input type="checkbox" onChange={this.handleCheckboxChange} selected={this.state.customersGetTemperatureChecks} name="customersGetTemperatureChecks"/>
             <br /> */}
-            <label id="rating" htmlFor="">Overall Safety Rating</label>
-            <input type="number" min='0' max='5' onChange={this.handleRatingChange} value={this.state.safetyRating} name="safetyRating"/>
-            <button onClick={this.submitReview} id="btn">SUBMIT</button>
-            <a href="/" id="btn">Cancel</a>
+            <label id="rating" htmlFor="" >Overall Safety Rating</label>
+            <input type="number" min='0' max='5' onChange={this.handleRatingChange} placeholder="Give a rating from 1 - 5" value={this.state.safetyRating} name="safetyRating"/>
+            <button onClick={this.submitReview} id="btn" className="btn">SUBMIT</button>
+            <a href="/" >Cancel</a>
             </div>
             </>
             )
