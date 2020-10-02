@@ -10,6 +10,8 @@ require('./config/database');
 const userRouter = require('./routes/users');
 const authRouter = require('./routes/auth');
 const restaurantsRouter = require('./routes/restaurants')
+const uploadRouter = require("./routes/upload");
+const apisRouter = require('./routes/apis')
 
 const cors = require('cors')
 
@@ -24,6 +26,8 @@ app.use(express.static(path.join(__dirname, 'build')));
 app.use('/api/auth', authRouter);
 app.use('/api/users', userRouter);
 app.use('/restaurants', restaurantsRouter)
+app.use("/api/upload", uploadRouter);
+app.use('/apis', apisRouter)
 
 app.get('/*', function(req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
