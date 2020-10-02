@@ -1,11 +1,20 @@
-// const Restaurant = require('../models/restaurant')
+const Restaurant = require('../models/restaurant')
 const request = require('request')
-
+const db = require('../config/database')
+const restCollection = db._db.collections['restaurants']
 module.exports = { getTARestaurantsFromLocation }
 
 async function getTARestaurantsFromLocation(req, res) {
     const locationId = await getTALocationIdFromQuery(req.params.locationQuery)
-    const restaurants = await getTARestaurantsFromLocationId(locationId)
+    let restaurants = await getTARestaurantsFromLocationId(locationId)
+    const restsLocIds = restaurants.map(r => `${r.location_id}`)
+    const savedRests = await Restaurant.find()
+    restaurants = restaurants.map(r => {
+        for (let sRest of savedRests) {
+            if (r.location_id === sRest.location_id) r = sRest
+        }
+        return r
+    })
     res.status(200).json({ restaurants })
 }
 
