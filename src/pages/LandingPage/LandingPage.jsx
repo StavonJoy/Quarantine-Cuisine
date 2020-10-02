@@ -1,13 +1,14 @@
 import React from 'react';
 import LocationSearch from '../../components/LocationSearch/LocationSearch'
-import NavBar from '../../components/NavBar/NavBar'
+import './LandingPage.css'
 
 function LandingPage() {
   return (
   <>
+    <header>
     <h1>Quarantine Cuisine</h1>
+    </header>
     <LocationSearch />
-    <NavBar />
   </>
   )
 }
