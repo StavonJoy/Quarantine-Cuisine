@@ -1,10 +1,11 @@
-# Meet Your Maker
-### A wonderful market place designed by Karen, Robert, and Earl
+# Quarantine-Cuisine
+
+The Best Team: Cheyenne Coston, Chloe Taub, Stavon Boavida, Tori Moline, and Earl Lampley
+
+### A way to dine in safety
 
 ---
-[Open MYM](https://meetyourmaker925.herokuapp.com/login)
-
-For all those individuals who would like to sell their goods in a more friendly environement here is Meet Your Maker. Logging into Meet Your Maker allows the choice of buying, selling, or browsing local goods and services. Login to browse stores and products. Then alert the seller of desire to purchase the goods from the site via a built-in mailer. Users can review stores and leave feedback for other potential customers. Makers can create their store and upload images for their storefront as well as their products. All users can view and add calendar events to emphasize community-driven events.
+[Open Quantine-Cuisine](LINK)
 
 ## Contents
 * Objective
@@ -18,25 +19,16 @@ For all those individuals who would like to sell their goods in a more friendly 
 * Credits
 
 ### Objective
-To facilitate creaters and harvesters to sell to their neighbors on an ongoing basis without the hassels of bigger marketplace websites.
-
----
- 
-### Motivation
-Team member Karen and her husband are urban farmers and creaters and dislike the current options for notifying their neighbors when they have products for sale. Team members Earl and Rob also have family and friends who are looking for better opportunites for local, small-market sales. 
+For everyone who needs to dine in safety allow users to review, and browse reviews of how restraunts are handling pandemic dining. 
 
 ---
 
 ## Minimum Viable Product
 * AAU I should be able to register for an account.
 * AAU I should be able to login/out
-* AAU I should be able to add local events to a calendar
-* As a seller I should be able to list prodcuts/quantities for sale.
-* As a seller I should be able to post pictures of my products.
-* As a buyer I should be able to see sellers/items for sale in the Atlanta area.
-* As a buyer I should be able to contact the seller with order and return contact information
-* As a buyer I shoud have a simple review form for the seller/store
-* As a buyer when I click on an item I want to purchase, I should see a form to message the seller.
+* AAU I should be able to search nearby restautrants 
+* AAU I should be able to view reviews of other users
+* AAU I should bne able to leave a review
 
 ---
 
@@ -44,51 +36,35 @@ Team member Karen and her husband are urban farmers and creaters and dislike the
 
 #### ERD
 
-![](public/images/CurrentERD.png)
+![](public/images/ERD.png)
 
 ---
 
 #### WireFrame
-[Link](https://share.proto.io/LMSOX5/)
- 
-![Image](public/images/WFSS1.png)
 
----
-![Image](public/images/WFSS2.png)
-
-
-
-### Trello Board
-[Open Trello](https://trello.com/b/8J1SKHlY/meet-your-maker)
+![Image](public/images/WF1.png)
 
 ---
 
-## User Stories
-Karen and Mike sell eggs and honey. They don't like facebook but it's the only way to the their neighbors know when new harvests are in. They would love an app that would allow them a little home to display their wares and respond to buyer inquiries.
- 
- Jane is laid off from her job due to Covid19. She bakes cakes and cookies and could sell them for extra money. She needs a platform to let people in her area know of her new goods and chat with her about orders. She would like to have a page of her own to show her unique style.
- 
-Megan has missed being able to sell her jewelry at local markets. Her hobby of making jewelry is an easy source of extra income, but she needs a place to sell her goods as they get lost in the bigger sites. She would like to stand out more than in a larger nationwide store.
+![Image](public/images/WF2.png)
 
----
 
 ## Screenshots
 ![Home Screen](public/images/HomeScreenshot.png)
 
 ---
-![All Makers](public/images/StoreList.png)
+![All Makers](public/images/Sshot1.png)
 
 ---
-![Maker Store Items](public/images/MakerStore.png)
+![Maker Store Items](public/images/Sshot2.png)
 
 ---
 
 ## Stretch Goals/ What Comes Next
-- [ ] Implement other locations to match makers/buyers
-- [x] Give cities/towns the ability to integrate Makers Markets/Farmers Markets to the calendar
-- [ ] Give Makers the ability to review buyers as well
-- [ ] Stripe API for payments
-- [ ] Have buyers add themselves to wait list for out of stock items
+
+- [ ] Implement other places/locations to review
+- [ ] Give Restraunts the ability to answer reviews and update their own page
+
 
 ---
 
@@ -105,22 +81,7 @@ Megan has missed being able to sell her jewelry at local markets. Her hobby of m
 - React
 - AWS-SDK
 - Multer3
-- SemanticUI
-- Nodemailer
-- Full Calendar React
 - Postman API Development
 - JWT OAuth
-- Proto.io
-- Powtoon
 - Git
 
-## Photo Credits
-Landing Page Photos
-
-* Koombucha picture from holyfamily.com
-* Jelly picture from B&S Pepper Company, Atlanta
-* Other pictures from Karen Lobin Perkins
-
----
-
-[Open MYM](https://meetyourmaker925.herokuapp.com/login)
