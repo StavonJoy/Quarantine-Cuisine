@@ -44,7 +44,7 @@ class LocationSearch extends Component {
                         <a className="card-text" src={rest.website} target="_blank">{rest.website}</a>
                         <p className="card-text">{rest.description}</p>
                         <Link to={{ pathname: '/addReview', state: {restaurant: rest} }} >
-                        <button className="btn btn-primary" onClick={this.goToAddReview}>ADD Review</button>
+                        <button className="btn btn-primary" id="btn">ADD Review</button>
                         </Link>
                     </div>
                 </div>

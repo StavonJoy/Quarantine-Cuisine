@@ -42,9 +42,9 @@ class App extends Component {
         <Route
           exact
           path="/addReview"
-          render={(history) => (
+          render={({history}) => (
             <main>
-             <AddReview restaurant={history.location.state.restaurant} user={user}/>
+             <AddReview restaurant={history.location.state.restaurant} user={user} history={history} />
             </main>
           )}
         />

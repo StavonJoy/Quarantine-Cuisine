@@ -32,7 +32,7 @@ export default class AddReview extends Component {
 
     submitReview = async () => {
         await restaurantService.addNewReview(this.state)
-        // this.props.history.push('/')
+        this.props.history.push('/')
     }
 
     render() {
