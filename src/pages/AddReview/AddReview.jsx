@@ -39,6 +39,7 @@ export default class AddReview extends Component {
     render() {
         return(
             <>
+            <h1>Quarantine Cuisine</h1>
             <h3>{this.props.restaurant.name}</h3>
             <p>{this.props.restaurant.address}</p>
             <div className="review">
