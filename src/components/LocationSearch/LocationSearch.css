@@ -1,8 +1,4 @@
-#btn {
-  padding: 4px;
-  margin-left: 15px;
-  margin-bottom: 10px;
-}
+
 
 a:hover {
   cursor: pointer;
@@ -17,4 +13,15 @@ a:hover {
 
 label {
   margin-bottom: auto;
+}  
+input {
+  border-radius: 25px;
+  height: 40px;
+  width: 200px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+input:hover {
+  border: 1px solid blue;
+  border-radius: 25px;
 }

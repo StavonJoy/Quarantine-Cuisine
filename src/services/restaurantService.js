@@ -9,4 +9,4 @@ export function addNewReview(restAndReviewInfo) {
         console.log(data)
         return data
     })
-} 
+}

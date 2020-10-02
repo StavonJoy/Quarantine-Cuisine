@@ -8,7 +8,6 @@ function LandingPage() {
     <header>
     <h1>Quarantine Cuisine</h1>
     </header>
-    <LocationSearch />
   </>
   )
 }
