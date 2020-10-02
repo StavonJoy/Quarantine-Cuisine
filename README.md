@@ -9,14 +9,11 @@ The Best Team: Cheyenne Coston, Chloe Taub, Stavon Boavida, Tori Moline, and Ear
 
 ## Contents
 * Objective
-* Motivation
 * Minimum Viable Product
 * ERD/Wireframes
-* User Stories
 * Screenshots
 * Stretch Goals
 * Technologies Implemented
-* Credits
 
 ### Objective
 For everyone who needs to dine in safety allow users to review, and browse reviews of how restraunts are handling pandemic dining. 
@@ -69,19 +66,17 @@ For everyone who needs to dine in safety allow users to review, and browse revie
 ---
 
 ## Technologies Used
-- Javascript
-- Html
-- CSS
-- NodeJS
-- ExpressJS
-- Express Generator
-- MongoDB
-- MongooseJS
-- MongoDB Atlas
-- React
-- AWS-SDK
-- Multer3
-- Postman API Development
-- JWT OAuth
-- Git
-
+- Javascript - programming language for websites
+- Html - programming language for websites
+- CSS - programming language for websites
+- NodeJS - Node.js is an open-source, cross-platform, back end, JavaScript runtime environment that executes JavaScript code outside a web browser
+- ExpressJS - back end web application framework for Node.js
+- Express Generator - automatically build an express template
+- MongoDB - database of reviews and users
+- React - JavaScript library for building user interfaces or UI components
+- AWS-SDK - image uploader
+- Multer3 - image uploader
+- Postman API Development - testing for api calls
+- JWT OAuth - authentication for users
+- Git - hosting
+- Figma - Building outlines 
