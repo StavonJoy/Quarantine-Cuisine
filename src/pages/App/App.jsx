@@ -8,6 +8,7 @@ import Users from "../Users/Users";
 import "./App.css";
 import LocationSearch from '../../components/LocationSearch/LocationSearch'
 import LandingPage from '../LandingPage/LandingPage'
+import AddReview from "../AddReview/AddReview";
 
 class App extends Component {
   state = {
@@ -35,6 +36,15 @@ class App extends Component {
               <LandingPage user={user}/>
               <LocationSearch user={user}/>
               {/* <AddReview /> */}
+            </main>
+          )}
+        />
+        <Route
+          exact
+          path="/addReview"
+          render={({history}) => (
+            <main>
+             <AddReview restaurant={history.location.state.restaurant} user={user} history={history} />
             </main>
           )}
         />

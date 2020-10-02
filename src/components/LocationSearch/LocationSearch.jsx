@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 import AddReview from '../../pages/AddReview/AddReview';
 import * as tripAdvisorService from '../../services/tripAdvisorService'
 import './LocationSearch.css'
@@ -47,6 +48,9 @@ class LocationSearch extends Component {
                         :
                         <p>No safety reviews yet</p>
                         }
+                        <Link to={{ pathname: '/addReview', state: {restaurant: rest} }} >
+                        <button className="btn btn-primary" id="btn">ADD Review</button>
+                        </Link>
                     </div>
                 </div>
                 </>
