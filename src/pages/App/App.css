@@ -18,6 +18,7 @@ main {
 
 h1 {
   font-family: 'Roboto Slab', serif;
+  color: #1e6CAA;
 }
 
 body {
@@ -30,4 +31,8 @@ footer {
   bottom: 0;
   height: 60px;
   margin: 0 auto;
+}
+
+.review {
+  background-color: #e7D9C850;
 }
