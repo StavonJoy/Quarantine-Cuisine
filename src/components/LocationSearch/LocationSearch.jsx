@@ -32,7 +32,6 @@ class LocationSearch extends Component {
             <>
             {this.state.restaurants && this.state.restaurants.length ?
             <>
-            {/* <AddReview restaurant={this.state.restaurants[0]} user={this.props.user}/> */}
             {this.state.restaurants.map(rest => (
                 <>
                 <br></br>
@@ -42,7 +41,12 @@ class LocationSearch extends Component {
                         <img src={rest.photo} alt=""/>
                         <h5 className="card-title">{rest.phone}</h5>
                         <a className="card-text" src={rest.website} target="_blank">{rest.website}</a>
-                        <p className="card-text">{rest.description}</p>
+                        {/* <p className="card-text">{rest.description}</p> */}
+                        { rest.safetyReviews ?
+                        <p>{rest.staffWearsGloves}</p>
+                        :
+                        <p>No safety reviews yet</p>
+                        }
                     </div>
                 </div>
                 </>
